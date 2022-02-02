@@ -1,0 +1,21 @@
+# LISTAR todos os assentos:
+GET http://localhost:3000/assentos
+###
+
+# LISTAR um assento por id:
+GET http://localhost:3000/assentos
+###
+
+# CADASTRAR um novo assento:
+POST http://localhost:3000/assentos
+Content-Type: application/json
+
+{
+    "vooId": 1,
+    "nome":"teste"
+}
+###
+
+# EXCLUIR um assento por id:
+DELETE http://localhost:3000/assentos
+###

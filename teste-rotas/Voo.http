@@ -1,0 +1,26 @@
+# LISTAR os voos:
+GET http://localhost:3000/voos
+###
+
+# LISTAR um voo por id:
+GET http://localhost:3000/voos
+###
+
+# CADASTRAR um novo voo:
+POST http://localhost:3000/voos
+Content-Type: application/json
+
+{
+    "hora_partida":"2024-02-02T12:00:00.123Z",
+    "hora_chegada":"2022-02-07T23:57:00.123Z",
+    "aeroporto_origem":"CONGONHAS",
+    "aeroporto_destino":"NATAL",
+    "quantidadeAssentos": 150,
+    "preco_passagem": 3000.99,
+    "companhiaId": 3
+}
+###
+
+# EXCLUIR um voo por id:
+DELETE http://localhost:3000/voos/4
+###

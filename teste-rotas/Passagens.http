@@ -1,0 +1,24 @@
+# LISTAR todas as reservas de passagens:
+GET http://localhost:3000/passagens
+###
+
+# LISTAR uma reserva de passagen por id:
+GET http://localhost:3000/passagens
+###
+
+# CADASTRAR reserva de passagen:
+POST http://localhost:3000/passagens
+Content-Type: application/json
+
+{
+    "nome_passageiro": "DENISE MARQUES DE LIMA",
+    "cpf": "404.780.538-60",
+    "companhiaId": 3,
+    "vooId": 5,
+    "assentos": 79
+}
+###
+
+# EXCLUIR uma reserva de passagen por id:
+DELETE http://localhost:3000/passagens/2
+###
